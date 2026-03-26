@@ -5,6 +5,12 @@ Running locally in terminal (Git Bash and Docker Desktop)
 
   *docker-compose down (to stop the program)*
 
+API Endpoints
+  GET /          — service info and status
+  GET /health    — health check (returns {"status":"ok"})
+  GET /analyze?service=api     — returns cloud-ready result
+  GET /analyze?service=legacy  — returns not-ready result
+
   Design Choices
   - Nginx — It handles the HTTPS padlock so the app doesn't have to. This is the standard real-world pattern.
   - Docker Compose — One file, one command, both services running and connected. Mirrors how AWS does it.
