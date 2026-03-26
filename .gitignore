@@ -1,0 +1,5 @@
+node_modules/
+
+# Never commit private keys or certificates to version control
+certs/key.pem
+certs/cert.pem
