@@ -1,6 +1,7 @@
 Running locally in terminal (Git Bash and Docker Desktop)
   bash certs/generate-certs.sh
   docker-compose up --build
+  https://localhost in browser
 
   *docker-compose down (to stop the program)*
 
